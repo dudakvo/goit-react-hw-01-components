@@ -1,0 +1,37 @@
+.profile {
+  padding: 30px;
+  width: 200px;
+  background-color: grey;
+  border-radius: 5px;
+}
+
+.description {
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+
+.avatar {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.stats {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.label {
+  display: inline-block;
+}
+
+.quantity {
+  display: inline-block;
+}
+
+.statsItem {
+  width: calc(100% / 3);
+  background-color: #a0a0a0;
+}

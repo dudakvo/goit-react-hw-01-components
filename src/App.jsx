@@ -3,18 +3,23 @@ import userSatatisic from "./data/statistical-data.json";
 import firendsList from "./data/friends.json";
 import transaction from "./data/transactions.json";
 
-import Socialprofile from "./components/Socialprofile";
-import Transactionhistory from "./components/Transactionhistory";
-import Statistic from "./components/Statistic";
-import Friendslist from "./components/Friendslist";
+import SocialProfile from "./components/socialprofile/Socialprofile";
+import TransactionHistory from "./components/transactionhistory/Transactionhistory";
+import Statistic from "./components/statistic/Statistic";
+import FriendsList from "./components/friendslist/Friendslist";
+import styles from "./App.module.css";
 
 export default function App(props) {
   return (
-    <div>
-      <Socialprofile {...user} />
-      <Statistic userStatistic={userSatatisic} title="USER STATISTIC" />
-      <Friendslist props={firendsList} />
-      <Transactionhistory transaction={transaction} />
+    <div className={styles.container}>
+      <div className={styles.userProps}>
+        <div>
+          <SocialProfile {...user} />
+          <Statistic userStatistic={userSatatisic} title="USER STATISTIC" />
+        </div>
+        <FriendsList props={firendsList} />
+      </div>
+      <TransactionHistory transaction={transaction} />
     </div>
   );
 }

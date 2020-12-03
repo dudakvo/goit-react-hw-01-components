@@ -1,12 +1,10 @@
 import PropTypes from "prop-types";
+import styles from "./Transactionhistory.module.css";
 
 export default function Transactions(props) {
-  console.log(
-    "🚀 ~ file: Transactionhistory.jsx ~ line 4 ~ Transactions ~ props",
-    props
-  );
+  let item = 0;
   return (
-    <table class="transaction-history">
+    <table className={styles.transactionHistory}>
       <thead>
         <tr>
           <th>Type</th>
@@ -17,8 +15,9 @@ export default function Transactions(props) {
       <tbody>
         {props.transaction.map((transaction) => {
           const { id, type, amount, currency } = transaction;
+          item += 1;
           return (
-            <tr key={id}>
+            <tr key={id} className={item % 2 ? styles.even : styles.odd}>
               <td>{type}</td>
               <td>{amount}</td>
               <td>{currency}</td>

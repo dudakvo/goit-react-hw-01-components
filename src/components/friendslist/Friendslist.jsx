@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
-import FriendsListItem from "./FriendListItem";
+import FriendsListItem from "../friendslistitem/FriendListItem";
+import styles from "./Friendslist.module.css";
 
-export default function Friendslist(props) {
-  console.log("My array: ", props);
+export default function FriendsList(props) {
   return (
-    <ul class="friend-list">
+    <ul className={styles.friendsList}>
       {/*<!-- Произвольное кол-во FriendListItem, в зависимости от кол-ва объектов в массиве -->*/}
       {props.props.map((friendItem) => {
         return <FriendsListItem {...friendItem} />;

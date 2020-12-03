@@ -1,0 +1,14 @@
+.container {
+  margin: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 600px;
+}
+
+.userProps {
+  display: flex;
+}
+
+.firendsList {
+  margin-left: 20px;
+}

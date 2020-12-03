@@ -1,0 +1,25 @@
+.statistics {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+}
+
+.statList {
+  display: flex;
+}
+
+.label {
+  display: block;
+}
+
+.percentage {
+  display: block;
+}
+
+.item {
+  border-width: 1px;
+  border-style: solid;
+  padding: 5px;
+}

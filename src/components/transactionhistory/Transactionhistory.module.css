@@ -1,0 +1,20 @@
+.transactionHistory {
+  /*display: block;*/
+  width: 100%;
+}
+
+.row:nts-child(odd) {
+  background-color: ghostwhite;
+}
+
+.row:nts-child(even) {
+  background-color: whitesmoke;
+}
+
+.odd {
+  background-color: gainsboro;
+}
+
+.even {
+  background-color: whitesmoke;
+}
