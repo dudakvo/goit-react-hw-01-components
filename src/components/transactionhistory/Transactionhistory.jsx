@@ -28,3 +28,10 @@ export default function Transactions(props) {
     </table>
   );
 }
+
+PropTypes.Transactions = {
+  id: PropTypes.number,
+  type: PropTypes.string,
+  amount: PropTypes.number,
+  currency: PropTypes.string,
+};
