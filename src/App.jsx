@@ -1,13 +1,13 @@
-import user from "./data/user.json";
-import userSatatisic from "./data/statistical-data.json";
-import firendsList from "./data/friends.json";
-import transaction from "./data/transactions.json";
+import user from './data/user.json';
+import userSatatisic from './data/statistical-data.json';
+import firendsList from './data/friends.json';
+import transaction from './data/transactions.json';
 
-import SocialProfile from "./components/socialprofile/Socialprofile";
-import TransactionHistory from "./components/transactionhistory/Transactionhistory";
-import Statistic from "./components/statistic/Statistic";
-import FriendsList from "./components/friendslist/Friendslist";
-import styles from "./App.module.css";
+import SocialProfile from './components/Socialprofile/Socialprofile';
+import TransactionHistory from './components/Transactionhistory/Transactionhistory';
+import Statistic from './components/Statistic/Statistic';
+import FriendsList from './components/Friendslist/Friendslist';
+import styles from './App.module.css';
 
 export default function App(props) {
   return (
